@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo</title>
+    <style>
+      .span2,
+      .span1 {
+        margin-right: 10px;
+      }
+    </style>
+    <script src="./card.js" defer></script>
+    <script src="./moreCard.js" defer></script>
+  </head>
+  <body>
+    <card-test></card-test>
+    <template id="moreCard">
+      <style>
+        span {
+          color: red;
+          margin-right: 18px;
+        }
+      </style>
+      <span>复杂demo:</span>
+      <span id="num"></span>
+      <button id="button1"></button>
+      <button id="button2"></button>
+    </template>
+    <more-card num="0" label1="increse" label2="decrease" />
+  </body>
+</html>
